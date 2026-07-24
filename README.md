@@ -35,3 +35,17 @@ Each UVM project in this repository follows standard industry architecture guide
                    |  Design Under Test     |
                    |        (DUT)           |
                    +------------------------+
+```
+
+## 🛠️ Tools & Simulators
+The testbenches in this repository are developed and validated using:
+* **Simulators:** Synopsys VCS / Siemens QuestaSim / Aldec Riviera-Pro
+* **UVM Version:** UVM 1.2
+* **Online Sandbox:** EDA Playground
+
+## 🎯 Key Verification Concepts Implemented
+* **UVM Factory Registration & Overrides:** `uvm_component_utils`, `uvm_object_utils`
+* **Configuration Database:** Safe handle passing using `uvm_config_db`
+* **TLM Communication:** `uvm_analysis_port` and `uvm_analysis_imp` connections
+* **Synchronous Driving & Sampling:** Avoiding race conditions using `@(posedge clk)` and delta delays
+* **Self-Checking Scoreboards:** Dynamic golden reference models comparing expected vs. actual DUT outputs
